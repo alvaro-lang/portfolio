@@ -1,9 +1,10 @@
 import { useState } from "react"
 import React from 'react'
+import '../styles/Home.css'
 
-export default function Component2() {
+export default function Home() {
 
-    var text = ""
+    let text = ""
 
     const [updated, setUpdate] = useState()
     
@@ -16,7 +17,7 @@ export default function Component2() {
     }
 
     return (
-        <div>
+        <div id="home">
             <input type="text" onChange={textOnChange}/>
             
             <button onClick={textUpdated}>Actualizar</button>
