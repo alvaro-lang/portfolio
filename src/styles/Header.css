@@ -40,7 +40,7 @@
 
 .links ul li a:not(:hover)::before {
     width: 0;
-    right: 0;
+    right: -10%;
 }
 
 .resume-button a {
