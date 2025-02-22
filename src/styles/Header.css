@@ -1,3 +1,57 @@
-#header{
-    padding: 50px 50px 0 50px;
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px
+}
+
+.links{
+    width: 100%;
+}
+
+.links ul {
+    display: flex;
+    gap: 10%;
+    padding: 0;
+    list-style: none;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+.links ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s
+}
+  
+.links ul li a:hover::before {
+    width: 120%;
+    left: -10%;
+}
+
+.links ul li a:not(:hover)::before {
+    width: 0;
+    right: 0;
+}
+
+.resume-button a {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.resume-button .a:hover {
+    background-color: #e65c00;
 }

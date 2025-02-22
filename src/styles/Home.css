@@ -1,3 +1,10 @@
 #home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1
+}
 
+#home .presentation-text{
+    text-align: justify;
 }

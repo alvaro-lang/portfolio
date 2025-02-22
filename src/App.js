@@ -1,11 +1,12 @@
-import Header from './components/Header';
-import Router from './Router';
+import AppRouter from './AppRouter';
 import './styles/App.css'
+import Header from './components/Header';
 
 function App() {
   return (
     <div id="app">
-        <Router/>
+        <Header></Header>
+        <AppRouter/>
     </div>
   );
 }
