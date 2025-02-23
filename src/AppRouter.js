@@ -1,13 +1,11 @@
 import React from 'react';
-import {Routes, Route, BrowserRouter} from "react-router-dom";
-import Home from './components/Home';
+import {Routes, Route} from "react-router-dom";
+import About from './components/About';
 
 export default function AppRouter(){
   return (
-    <BrowserRouter>
-      <Routes>
-          <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+        <Route path="/" element={<About />} />
+    </Routes>
   );
 }

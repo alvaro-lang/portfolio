@@ -1,0 +1,88 @@
+#about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    width: 80%;
+    margin: 5% 0 0 0;
+
+}
+
+#about .presentation-title{
+    font-family: 'Press Start 2P';
+    color: rgb(184, 250, 145);
+    font-size: 1.5rem;
+    
+    margin-left: 5px;
+}
+
+#about .title{
+    font-size: 4rem;
+}
+
+#about .subtitle{
+    margin-bottom: 30px;
+
+    color: #B0B0B0;
+    font-size: 3rem;
+}
+
+#about .presentation-text{
+    width: 60%;
+    color: #B0B0B0
+}
+
+#about .vue-logo {
+    position: absolute;
+    top: 30%; 
+    left: 73%;
+    animation: float-vue 20s linear infinite;
+}
+
+#about .django-logo {
+    position: absolute;
+    top: 60%; 
+    left: 60%;
+    animation: float-django 20s linear infinite;
+}
+
+#about img {
+    width: 200px;
+}
+
+@keyframes float-vue {
+    0% {
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+    25% {
+        transform: translateX(10px) translateY(-5px) rotate(2deg);
+    }
+    50% {
+        transform: translateX(15px) translateY(-10px) rotate(0deg);
+    }
+    75% {
+        transform: translateX(5px) translateY(-5px) rotate(-2deg);
+    }
+    100% {
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+}
+
+@keyframes float-django {
+    0% {
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+    25% {
+        transform: translateX(-10px) translateY(5px) rotate(-2deg);
+    }
+    50% {
+        transform: translateX(-15px) translateY(10px) rotate(0deg);
+    }
+    75% {
+        transform: translateX(-5px) translateY(5px) rotate(2deg);
+    }
+    100% {
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+}
+

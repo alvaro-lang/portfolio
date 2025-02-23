@@ -1,6 +1,6 @@
 import { useState } from "react"
 import React from 'react'
-import '../styles/Home.css'
+import '../styles/About.css'
 
 export default function ComponentePrueba() {
 
@@ -17,7 +17,7 @@ export default function ComponentePrueba() {
     }
 
     return (
-        <div id="home">
+        <div id="about">
             <input type="text" onChange={textOnChange}/>
             
             <button onClick={textUpdated}>Actualizar</button>

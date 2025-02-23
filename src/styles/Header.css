@@ -1,57 +1,80 @@
 
 #header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-top: 50px
+    justify-content: center;
+    margin: 50px 0;
 }
 
-.links{
+#header .logo-page{
+    width: 50px;
+}
+
+#header .links{
     width: 100%;
 }
 
-.links ul {
+#header .links ul {
     display: flex;
-    gap: 10%;
-    padding: 0;
+    margin: 0;
     list-style: none;
+    justify-content: flex-end;
 }
 
-.links ul li a {
+#header .links ul .page{
+    margin-right: 60px;
+}
+
+#header .links ul .page a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
+    
+    font-size: 0.8rem;
+    color: rgb(184, 250, 145);
+    font-family: 'Press Start 2P';
+    
     position: relative;
 }
 
-.links ul li a::before {
+#header .links ul .page .active{
+    color: rgb(184, 250, 145, 0.5);
+    pointer-events: none;
+    text-decoration: none;
+}
+
+#header .links ul .page a::before {
     content: '';
     position: absolute;
     bottom: -10px;
     height: 2px;
     background-color: rgb(255, 255, 255);
-    transition: 0.3s
+    transition: 0.2s
 }
   
-.links ul li a:hover::before {
+#header .links ul .page a:hover::before {
     width: 120%;
     left: -10%;
 }
 
-.links ul li a:not(:hover)::before {
+#header .links ul .page a:not(:hover)::before {
     width: 0;
     right: -10%;
 }
 
-.resume-button a {
-    background-color: #ff6600;
-    color: white;
-    padding: 10px 20px;
+#header .resume-button a {
+    font-family: 'Press Start 2P';
+    color: rgb(184, 250, 145);
+
+    background-color: transparent;
+    padding: 15px 25px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border: 1px solid rgb(184, 250, 145);
 }
 
-.resume-button .a:hover {
-    background-color: #e65c00;
+#header .resume-button a:hover {
+    background-color: rgb(184, 250, 145, 0.3);
+    transition: 0.3s;
+}
+#header .resume-button a:not(:hover) {
+    background-color: transparent;
+    transition: 0.3s;
 }

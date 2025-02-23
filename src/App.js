@@ -1,12 +1,17 @@
 import AppRouter from './AppRouter';
 import './styles/App.css'
 import Header from './components/Header';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <div id="app">
+      <BrowserRouter>
         <Header></Header>
-        <AppRouter/>
+        <div className="pages">
+          <AppRouter/>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
