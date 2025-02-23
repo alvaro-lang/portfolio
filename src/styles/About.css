@@ -3,9 +3,16 @@
     justify-content: center;
     flex-direction: column;
     text-align: justify;
-    width: 80%;
-    margin: 5% 0 0 0;
+    margin: 30px 0 0 0;
+    align-items: center;
 
+}
+
+#about .center-text{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 75%;
 }
 
 #about .presentation-title{
@@ -22,67 +29,86 @@
 
 #about .subtitle{
     margin-bottom: 30px;
+    margin-top: -15px;
 
     color: #B0B0B0;
     font-size: 3rem;
 }
 
 #about .presentation-text{
-    width: 60%;
-    color: #B0B0B0
+    color: #B0B0B0;
+    line-height: 1.6;
 }
 
-#about .vue-logo {
+#about .js-image {
     position: absolute;
-    top: 30%; 
-    left: 73%;
-    animation: float-vue 20s linear infinite;
+    bottom: 300px; 
+    right: 30px;
+    animation: rotateZ 5s linear infinite;
+    animation-delay: 0.8s;
 }
 
-#about .django-logo {
+#about .python-image {
     position: absolute;
-    top: 60%; 
-    left: 60%;
-    animation: float-django 20s linear infinite;
+    bottom: 210px; 
+    right: 30px;
+    animation: rotateZ 5s linear infinite;
+    animation-delay: 0.2s;
+}
+
+#about .vue-image {
+    position: absolute;
+    bottom: 120px; 
+    right: 30px;
+    animation: rotateZ 5s linear infinite;
+    animation-delay: 0.6s;
+
+}
+
+#about .django-image {
+    position: absolute;
+    bottom: 30px; 
+    right: 30px;
+    animation: rotateZ 5s linear infinite;
+}
+
+#about .vue-image:hover, 
+#about .django-image:hover,
+#about .js-image:hover, 
+#about .python-image:hover {
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.3));
 }
 
 #about img {
-    width: 200px;
+    width: 50px;
 }
 
+@keyframes rotateZ {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+/**
 @keyframes float-vue {
     0% {
         transform: translateX(0px) translateY(0px) rotate(0deg);
     }
     25% {
-        transform: translateX(10px) translateY(-5px) rotate(2deg);
+        transform: translateX(-5px) translateY(10px) rotate(2deg);
     }
     50% {
-        transform: translateX(15px) translateY(-10px) rotate(0deg);
+        transform: translateX(-10px) translateY(15px) rotate(0deg);
     }
     75% {
-        transform: translateX(5px) translateY(-5px) rotate(-2deg);
+        transform: translateX(-5px) translateY(5px) rotate(-2deg);
     }
     100% {
         transform: translateX(0px) translateY(0px) rotate(0deg);
     }
 }
-
-@keyframes float-django {
-    0% {
-        transform: translateX(0px) translateY(0px) rotate(0deg);
-    }
-    25% {
-        transform: translateX(-10px) translateY(5px) rotate(-2deg);
-    }
-    50% {
-        transform: translateX(-15px) translateY(10px) rotate(0deg);
-    }
-    75% {
-        transform: translateX(-5px) translateY(5px) rotate(2deg);
-    }
-    100% {
-        transform: translateX(0px) translateY(0px) rotate(0deg);
-    }
-}
-
+**/
