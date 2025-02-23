@@ -1,11 +1,7 @@
 #app {
-  background-color: rgb(15, 23, 42);
-  min-height: 100vh;
-
   color: white;
 
   padding: 0 5%;
-
   display: flex;
   flex-direction: column;
 }

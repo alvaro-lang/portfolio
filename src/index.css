@@ -1,4 +1,6 @@
 html{
+  background-color: rgb(15, 23, 42);
+  overflow: hidden;
   font-size: 16px;
 }
 body {
