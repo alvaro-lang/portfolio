@@ -1,35 +1,40 @@
-#tech-icons img {
-    width: 50px;
-}
-
 #tech-icons .react-image {
     position: absolute;
     bottom: 210px; 
     right: 30px;
-    animation: rotateZ 5s linear infinite;
-    animation-delay: 0.8s;
 }
 
 #tech-icons .vue-image {
     position: absolute;
     bottom: 120px; 
     right: 30px;
-    animation: rotateZ 5s linear infinite;
-    animation-delay: 0.6s;
-
 }
 
 #tech-icons .django-image {
     position: absolute;
-    bottom: 30px; 
+    bottom: 30px;
     right: 30px;
+}
+
+#tech-icons .react-image:hover,
+#tech-icons .vue-image:hover,
+#tech-icons .django-image:hover{
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.3));
+}
+
+#tech-icons img{
+    width: 50px;
     animation: rotateZ 5s linear infinite;
 }
 
-#tech-icons .vue-image:hover, 
-#tech-icons .django-image:hover,
-#tech-icons .react-image:hover {
-    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.3));
+#tech-icons .react-image img{
+    animation-delay: 0.1s;
+}
+#tech-icons .vue-image img{
+    animation-delay: 0.5s;
+}
+#tech-icons .django-image img{
+    animation-delay: 0.3s;
 }
 
 @keyframes rotateZ {

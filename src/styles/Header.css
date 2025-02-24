@@ -33,36 +33,41 @@
     text-decoration: none;
     
     font-size: 0.8rem;
-    color: rgb(184, 250, 145);
+    color: rgb(184, 250, 145, 0.5);
     font-family: 'Press Start 2P';
     
     position: relative;
 }
+#header .links ul .page a:hover {
+    animation: blinkText 1s steps(2, start) infinite;
+}
+
+@keyframes blinkText {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
 
 #header .links ul .page .active{
-    color: rgb(184, 250, 145, 0.5);
     pointer-events: none;
-    text-decoration: none;
+    
+    color: #ccff66;
+    text-shadow: 0px 0px 10px rgba(204, 255, 102, 0.8), 0px 0px 20px rgba(204, 255, 102, 0.5);
+    animation: pulseActive 1.5s infinite alternate ease-in-out;
 }
 
-#header .links ul .page a::before {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    height: 2px;
-    background-color: rgb(255, 255, 255);
-    transition: 0.2s
-}
-  
-#header .links ul .page a:hover::before {
-    width: 120%;
-    left: -10%;
+@keyframes pulseActive {
+    0% {
+        text-shadow: 0px 0px 5px rgba(204, 255, 102, 0.5), 0px 0px 15px rgba(204, 255, 102, 0.3);
+    }
+    100% {
+        text-shadow: 0px 0px 10px rgba(204, 255, 102, 0.8), 0px 0px 20px rgba(204, 255, 102, 0.5);
+    }
 }
 
-#header .links ul .page a:not(:hover)::before {
-    width: 0;
-    right: -10%;
-}
+/**
+BUTTON
+**/
 
 #header .resume-button a {
     font-family: 'Press Start 2P';
