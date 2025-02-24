@@ -24,7 +24,7 @@
 
 #tech-icons img{
     width: 50px;
-    animation: rotateZ 5s linear infinite;
+    animation: rotateY 5s linear infinite;
 }
 
 #tech-icons .react-image img{
@@ -37,7 +37,7 @@
     animation-delay: 0.3s;
 }
 
-@keyframes rotateZ {
+@keyframes rotateY {
     from {
         transform: rotateY(0deg);
     }

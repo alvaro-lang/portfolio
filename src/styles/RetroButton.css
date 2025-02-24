@@ -1,0 +1,18 @@
+
+#retro-button {
+    font-family: 'Press Start 2P';
+    color: rgb(184, 250, 145);
+
+    background-color: transparent;
+    padding: 15px 25px;
+    border: 1px solid rgb(184, 250, 145);
+}
+
+#retro-button:hover {
+    background-color: rgb(184, 250, 145, 0.3);
+    transition: 0.3s;
+}
+#retro-button:not(:hover) {
+    background-color: transparent;
+    transition: 0.3s;
+}
