@@ -3,16 +3,14 @@
     justify-content: center;
     flex-direction: column;
     text-align: justify;
-    margin: 30px 0 0 0;
-    align-items: center;
-
+    margin-top: 50px;
 }
 
-#about .center-text{
+#about .text-container{
     display: flex;
     flex-direction: column;
     text-align: justify;
-    width: 65%;
+    width: 80%;
 }
 
 #about .presentation-title{
@@ -24,18 +22,21 @@
 }
 
 #about .title{
+    color: rgb(240, 240, 240);
     font-size: 4rem;
+    font-weight: 600;
 }
 
 #about .subtitle{
-    margin-bottom: 30px;
-    margin-top: -15px;
-
-    color: #B0B0B0;
+    color: rgb(240, 240, 240);
     font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+    
+    margin-bottom: 30px;
 }
 
 #about .presentation-text{
-    color: #B0B0B0;
     line-height: 1.6;
+    font-size: 1.2rem;
 }

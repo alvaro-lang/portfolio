@@ -1,11 +1,12 @@
 #app {
-  color: white;
-
-  padding: 0 5%;
+  color: rgb(158 168 193);
+  opacity: 0.9;
+  
+  padding: 0 50px;
   display: flex;
   flex-direction: column;
 }
 
 #app .pages{
-  margin: 0 5%;
+  margin: 0 12%;
 }
