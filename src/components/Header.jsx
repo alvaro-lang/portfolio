@@ -1,13 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../styles/Header.css"
-import { useLocation } from 'react-router-dom';
 import RetroButton from './RetroButton';
 
 export default function Header() {
 
-  let location = useLocation();
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.getElementById("header");
 
-  const isActive = (path) => location.pathname === path ? 'active' : '';
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header id="header">
@@ -15,9 +28,9 @@ export default function Header() {
 
       <nav className='links'>
         <ul>
-          <li className='page'><a className={isActive('/')} href='/'>ABOUT</a></li>
-          <li className='page'><a className={isActive('/experience')} href='/experience'>EXPERIENCE</a></li>
-          <li className='page'><a className={isActive('/courses')} href='/courses'>COURSES</a></li>
+          <li className='page'><a href='#about'>ABOUT</a></li>
+          <li className='page'><a href='#experience'>EXPERIENCE</a></li>
+          <li className='page'><a href='#courses'>COURSES</a></li>
           <li>
             <a href='/CV_Alvaro_Pastor_Sellers.pdf' download>
               <RetroButton text="RESUME"/>

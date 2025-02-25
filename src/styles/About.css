@@ -1,16 +1,14 @@
 #about {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: justify;
-    margin-top: 50px;
+    align-items: center;
+
+    height: 100vh;
 }
 
 #about .text-container{
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    width: 80%;
+    width: 90%;
 }
 
 #about .presentation-title{
@@ -39,4 +37,5 @@
 #about .presentation-text{
     line-height: 1.6;
     font-size: 1.2rem;
+    text-align: justify;
 }

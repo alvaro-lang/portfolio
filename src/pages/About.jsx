@@ -20,7 +20,7 @@ export default function About() {
                     Computer engineer specialized in software engineering with more than 2 years of experience in full-stack web application development with Python/Django, JavaScript/Vue.js, HTML5 and CSS3. Extensive experience in the software product creation life cycle, as well as: requirements analysis, system design and architecture, product development, unit testing, deployment to production and product maintenance.              
                 </div>
             </div>
-            <DownArrow/>
+            <a href='#experience'><DownArrow/></a>
         </div>
     )
 }

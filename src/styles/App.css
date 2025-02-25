@@ -1,12 +1,3 @@
-#app {
-  color: rgb(158 168 193);
-  opacity: 0.9;
-  
-  margin: 0 4%;
-  display: flex;
-  flex-direction: column;
-}
-
 #app .pages{
-  margin: 0 12%;
+  margin: 0% 17%;
 }
