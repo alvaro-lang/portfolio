@@ -11,3 +11,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.retro-font{
+  font-family: 'Press Start 2P';
+  color: rgb(184, 250, 145);
+
+}
+.retro-color{
+  color: rgb(184, 250, 145);
+}

@@ -1,0 +1,50 @@
+
+#contact-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    
+    gap: 20px;
+}
+
+#contact-bar a {
+    transition: 0.3s ease-in-out;
+}
+
+#contact-bar a:hover {
+    text-shadow: 0px 0px 10px rgba(184, 250, 145, 0.8), 0px 0px 20px rgba(184, 250, 145, 0.5);
+}
+
+#contact-bar i {
+    font-size: 24px;
+}
+
+#contact-bar .email-icon {
+    position: relative;
+}
+
+#contact-bar .email-text {
+    font-size: 12px;
+    writing-mode: vertical-rl;
+    opacity: 0;
+
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    
+    pointer-events: none;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+
+}
+
+#contact-bar .email-icon:hover .email-text {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-40px) rotate(180deg);
+    text-shadow: 0px 0px 10px rgba(184, 250, 145, 0.8), 0px 0px 20px rgba(184, 250, 145, 0.5);
+}

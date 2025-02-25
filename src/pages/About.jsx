@@ -7,7 +7,7 @@ export default function About() {
     return (
         <div id="about">
             <div className='text-container'>
-                <div className='presentation-title'>
+                <div className='presentation-title retro-font'>
                     Hey, I'm
                 </div>
                 <div className='title'>
