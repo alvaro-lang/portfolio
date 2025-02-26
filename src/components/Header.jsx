@@ -1,8 +1,29 @@
-import React, { useEffect } from 'react'
-import "../styles/Header.css"
-import RetroButton from './RetroButton';
+import React, { useEffect, useState } from "react";
+import "../styles/Header.css";
+import RetroButton from "./RetroButton";
 
 export default function Header() {
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,21 +44,35 @@ export default function Header() {
   }, []);
 
   return (
-    <header id="header" className='retro-font'>
-      <a href='/'><img className='logo-page' src="./images/logo.png" alt="Logo page"/></a>
+    <header id="header" className="retro-font">
+      <a href="#presentation">
+        <img className="logo-page" src="./images/logo.png" alt="Logo page" />
+      </a>
 
-      <nav className='links'>
+      <nav className="links">
         <ul>
-          <li className='page'><a href='#about' className='retro-color'>ABOUT</a></li>
-          <li className='page'><a href='#experience' className='retro-color'>EXPERIENCE</a></li>
-          <li className='page'><a href='#courses' className='retro-color'>COURSES</a></li>
+          <li className="page">
+            <a href="#about" className={`retro-color ${activeSection === "about" ? "active" : ""}`}>
+                ABOUT
+            </a>
+          </li>
+          <li className="page">
+            <a href="#experience" className={`retro-color ${activeSection === "experience" ? "active" : ""}`}>
+              EXPERIENCE
+            </a>
+          </li>
+          <li className="page">
+            <a href="#courses" className={`retro-color ${activeSection === "courses" ? "active" : ""}`}>
+              COURSES
+            </a>
+          </li>
           <li>
-            <a href='/CV_Alvaro_Pastor_Sellers.pdf' download>
-              <RetroButton text="RESUME"/>
+            <a href="/CV_Alvaro_Pastor_Sellers.pdf" download>
+              <RetroButton text="RESUME" />
             </a>
           </li>
         </ul>
       </nav>
     </header>
-  )
+  );
 }

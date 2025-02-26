@@ -1,0 +1,11 @@
+import React from 'react'
+import '../styles/About.css'
+
+export default function About() {
+
+    return (
+        <section id="about">
+            About
+        </section>
+    )
+}

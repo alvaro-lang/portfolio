@@ -1,16 +1,19 @@
 import './styles/App.css'
 import Header from './components/Header';
-import About from './pages/About';
-import Experience from './pages/Experience';
-import Courses from './pages/Courses';
-import ContactBar from './components/ContactBar'
+import ContactBar from './components/ContactBar';
+
+import Presentation from './sections/Presentation';
+import About from './sections/About';
+import Experience from './sections/Experience';
+import Courses from './sections/Courses';
 
 function App() {
   return (
     <div id="app">
         <Header></Header>
         <ContactBar/>
-        <div className="pages">
+        <div className="sections">
+          <Presentation/>
           <About/>
           <Experience/>
           <Courses/>

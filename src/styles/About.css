@@ -4,36 +4,3 @@
 
     height: 100vh;
 }
-
-#about .text-container{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-}
-
-#about .presentation-title{
-    font-size: 1.5rem;
-    
-    margin-left: 5px;
-}
-
-#about .title{
-    color: rgb(240, 240, 240);
-    font-size: 4rem;
-    font-weight: 600;
-}
-
-#about .subtitle{
-    color: rgb(240, 240, 240);
-    font-size: 3rem;
-    line-height: 1;
-    font-weight: 600;
-    
-    margin-bottom: 30px;
-}
-
-#about .presentation-text{
-    line-height: 1.6;
-    font-size: 1.2rem;
-    text-align: justify;
-}

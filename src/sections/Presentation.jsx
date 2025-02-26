@@ -1,11 +1,10 @@
 import React from 'react'
-import '../styles/About.css'
+import '../styles/Presentation.css'
 import DownArrow from '../components/DownArrow'
 
-export default function About() {
-
+export default function Presentation() {
     return (
-        <div id="about">
+        <section id='presentation'>
             <div className='text-container'>
                 <div className='presentation-title retro-font'>
                     Hey, I'm
@@ -20,7 +19,7 @@ export default function About() {
                     Computer engineer specialized in software engineering with more than 2 years of experience in full-stack web application development with Python/Django, JavaScript/Vue.js, HTML5 and CSS3. Extensive experience in the software product creation life cycle, as well as: requirements analysis, system design and architecture, product development, unit testing, deployment to production and product maintenance.              
                 </div>
             </div>
-            <a href='#experience'><DownArrow/></a>
-        </div>
+            <a href='#about'><DownArrow/></a>
+        </section>  
     )
 }

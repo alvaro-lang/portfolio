@@ -1,0 +1,39 @@
+#presentation {
+    display: flex;
+    align-items: center;
+
+    height: 100vh;
+}
+
+#presentation .text-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+#presentation .presentation-title{
+    font-size: 1.5rem;
+    
+    margin-left: 5px;
+}
+
+#presentation .title{
+    color: rgb(240, 240, 240);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+#presentation .subtitle{
+    color: rgb(240, 240, 240);
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+    
+    margin-bottom: 30px;
+}
+
+#presentation .presentation-text{
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: justify;
+}

@@ -3,6 +3,6 @@ import '../styles/Courses.css'
 
 export default function Courses() {
   return (
-    <div id="courses">Courses</div>
+    <section id="courses">Courses</section>
   )
 }
