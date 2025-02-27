@@ -6,17 +6,14 @@ export default function Presentation() {
     return (
         <section id='presentation'>
             <div className='text-container'>
-                <div className='presentation-title retro-font'>
-                    Hey, I'm
+                <div className='title retro-font'>
+                    Software
                 </div>
-                <div className='title'>
-                    Alvaro Pastor Sellers
-                </div>
-                <div className='subtitle'>
-                    Full Stack Developer
+                <div className='subtitle retro-font'>
+                    Developer
                 </div>
                 <div className="presentation-text">
-                    Computer engineer specialized in software engineering with more than 2 years of experience in full-stack web application development with Python/Django, JavaScript/Vue.js, HTML5 and CSS3. Extensive experience in the software product creation life cycle, as well as: requirements analysis, system design and architecture, product development, unit testing, deployment to production and product maintenance.              
+                    Hi! I'm <span className='retro-color'>Alvaro</span>. A Software Engineer with 2+ years of experience in <span className='retro-color'>full-stack</span> web application development with Python (Django) and JavaScript (Vue.js, React.js).
                 </div>
             </div>
             <a href='#about'><DownArrow/></a>
