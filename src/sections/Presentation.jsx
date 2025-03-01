@@ -12,7 +12,7 @@ export default function Presentation() {
                 <div className='subtitle retro-font'>
                     Developer
                 </div>
-                <div className="presentation-text">
+                <div className="presentation-text description-text">
                     Hi! I'm <span className='retro-color'>Alvaro</span>. A Software Engineer with 2+ years of experience in <span className='retro-color'>full-stack</span> web application development with Python (Django) and JavaScript (Vue.js, React.js).
                 </div>
             </div>

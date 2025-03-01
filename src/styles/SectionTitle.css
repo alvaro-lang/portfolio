@@ -1,11 +1,12 @@
 #section-title{
     padding-top: 15%;
+    margin-bottom: 7%;
 }
 
 #section-title::before {
     content: '>';
     color: #b8fa91;
-    margin: 0 15px;
+    margin-right: 15px;
 }
 
 #section-title::after {

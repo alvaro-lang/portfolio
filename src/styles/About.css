@@ -1,3 +1,11 @@
 #about {
     height: 100vh;
 }
+#about .container-text-image{
+}
+#about .container-text-image .text{
+    text-align: justify;
+}
+img {
+    width: 500px;
+}

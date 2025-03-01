@@ -23,8 +23,6 @@
 }
 
 #presentation .presentation-text{
-    line-height: 1.5;
-    font-size: 1.1rem;
     text-align: justify;
     width: 80%;
 }
