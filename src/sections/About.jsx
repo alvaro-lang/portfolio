@@ -5,11 +5,21 @@ import SectionTitle from '../components/SectionTitle'
 export default function About() {
 
     const technologies = [
-        { name: "React", src: "/images/react_logo.png" },
-        { name: "JavaScript", src: "/images/django_logo.png" },
-        { name: "CSS", src: "/images/vue_logo.png" },
-        { name: "HTML", src: "/images/react_logo.png" },
-        { name: "MongoDB", src: "/images/react_logo.png" }
+        { name: "Python", src: "/images/tech_logos/python.png" },
+        { name: "React", src: "/images/tech_logos/react.png" },
+        { name: "Vue", src: "/images/tech_logos/vue.png" },
+        { name: "Django", src: "/images/tech_logos/django.png" },
+        { name: "JavaScript", src: "/images/tech_logos/javascript.png" },
+        { name: "CSS3", src: "/images/tech_logos/css.png" },
+        { name: "HTML5", src: "/images/tech_logos/html.png" },
+        { name: "Docker", src: "/images/tech_logos/docker.png" },
+        { name: "Docker Compose", src: "/images/tech_logos/docker_compose.png" },
+        { name: "Git", src: "/images/tech_logos/git.png" },
+        { name: "Github", src: "/images/tech_logos/github.png" },
+        { name: "Gitlab", src: "/images/tech_logos/gitlab.png" },
+        { name: "MySQL", src: "/images/tech_logos/mysql.png" },
+        { name: "PostgreSQL", src: "/images/tech_logos/postgresql.png" },
+        { name: "Linux", src: "/images/tech_logos/linux.png" },
     ];
 
     return (
@@ -21,13 +31,15 @@ export default function About() {
                     {technologies.map((tech, index) => (
                         <div key={index} className="tech-logo">
                             <img src={tech.src} alt={tech.name} />
+                            <span className="tooltip retro-font">{tech.name}</span>
                         </div>
                     ))}
                 </div>
                 <div className='text description-text'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <p className='first-paragraph'>I am a <span className='retro-color'>Full-Stack Software Engineer</span> with experience in building web applications, specializing in <span className='retro-color'>Python (Django)</span> and <span className='retro-color'>JavaScript (Vue.js/React.js)</span>.</p>
+                    <p>Throughout my career, I have worked in agile environments (Scrum/Kanban), led client meetings, mentored junior developers, and developed high-performance REST APIs using <span className='retro-color'>Django Rest Framework</span>. I also have experience deploying applications in the cloud with Docker and DigitalOcean, managing databases like PostgreSQL and MySQL, and using tools such as Git, Jira, and Asana.</p>
+                    <p>I am always looking for new challenges to enhance my skills and learn more technologies</p>
                 </div>
-
             </div>
            
 

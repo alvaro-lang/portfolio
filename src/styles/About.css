@@ -11,6 +11,9 @@
 #about .container-text-images .text{
     text-align: justify;
 }
+#about .container-text-images .text .first-paragraph{
+    margin: 0;
+}
 
 #about .container-text-images .tech-grid{
     display: grid;
@@ -35,4 +38,21 @@
 #about .container-text-images .tech-grid .tech-logo:hover {
     transform: scale(1.1);
     background: rgba(255, 255, 255, 0.2);
+}
+
+#about .container-text-images .tech-grid .tech-logo .tooltip {
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 10px;
+
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#about .container-text-images .tech-grid .tech-logo:hover .tooltip {
+    opacity: 1;
 }
