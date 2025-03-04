@@ -44,6 +44,7 @@
     border-radius: 5px;
     font-size: 0.8rem;
     white-space: nowrap;
+    pointer-events: none;
 
     position: absolute;
     bottom: 100%;

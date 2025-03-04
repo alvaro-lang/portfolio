@@ -15,10 +15,12 @@ body {
 .retro-font{
   font-family: 'Press Start 2P';
   color: rgb(184, 250, 145);
-
 }
 .retro-color{
   color: rgb(184, 250, 145);
+}
+.white-font{
+  color: rgb(240, 240, 240, 0.9);
 }
 .description-text{
   line-height: 1.5;

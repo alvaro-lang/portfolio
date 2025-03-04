@@ -1,0 +1,40 @@
+#company-experience{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    width: 65%;
+
+    display: flex;
+    justify-content: space-between;
+
+    transition: 0.3s;
+}
+#company-experience .date{
+    white-space: nowrap;
+}
+
+#company-experience .container-text{
+    margin-left: 50px;
+
+}
+#company-experience .container-text .job-title{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+#company-experience .container-text .text-info{
+    text-align: justify;
+}
+
+#company-experience .container-text .container-grid{
+    display: flex;
+    gap: 5%;
+}
+#company-experience .container-text .container-grid .tags{
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+#company-experience:hover {
+    transform: scale(1.03);
+}

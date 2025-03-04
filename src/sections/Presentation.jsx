@@ -9,7 +9,7 @@ export default function Presentation() {
                 <div className='title retro-font'>
                     Software
                 </div>
-                <div className='subtitle retro-font'>
+                <div className='subtitle retro-font white-font'>
                     Developer
                 </div>
                 <div className="presentation-text description-text">
