@@ -6,7 +6,7 @@ html{
   color: rgb(158, 168, 193, 0.9);
 }
 body {
-  margin: 0;
+  margin-bottom: 100px;
   font-family: "Source Code Pro", serif;
 
   -webkit-font-smoothing: antialiased;

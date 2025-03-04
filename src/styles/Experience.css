@@ -2,8 +2,12 @@
     min-height: 100vh;
 }
 
+#experience .container-width{
+    width: 80%;
+}
+
 #experience .container-revoluz{
     display: flex;
     justify-content: flex-end;
-    margin-top: 100px;
+    margin-top: 7%;
 }
