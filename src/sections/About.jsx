@@ -5,21 +5,21 @@ import SectionTitle from '../components/SectionTitle'
 export default function About() {
 
     const technologies = [
-        { name: "Python", src: "./images/tech_logos/python.png" },
-        { name: "React", src: "./images/tech_logos/react.png" },
-        { name: "Vue", src: "./images/tech_logos/vue.png" },
-        { name: "Django", src: "./images/tech_logos/django.png" },
-        { name: "JavaScript", src: "./images/tech_logos/javascript.png" },
-        { name: "CSS3", src: "./images/tech_logos/css.png" },
-        { name: "HTML5", src: "./images/tech_logos/html.png" },
-        { name: "Docker", src: "./images/tech_logos/docker.png" },
-        { name: "Docker Compose", src: "./images/tech_logos/docker_compose.png" },
-        { name: "Git", src: "./images/tech_logos/git.png" },
-        { name: "Github", src: "./images/tech_logos/github.png" },
-        { name: "Gitlab", src: "./images/tech_logos/gitlab.png" },
-        { name: "MySQL", src: "./images/tech_logos/mysql.png" },
-        { name: "PostgreSQL", src: "./images/tech_logos/postgresql.png" },
-        { name: "Linux", src: "./images/tech_logos/linux.png" },
+        { name: "Python", src: "/images/tech_logos/python.png" },
+        { name: "React", src: "/images/tech_logos/react.png" },
+        { name: "Vue", src: "/images/tech_logos/vue.png" },
+        { name: "Django", src: "/images/tech_logos/django.png" },
+        { name: "JavaScript", src: "/images/tech_logos/javascript.png" },
+        { name: "CSS3", src: "/images/tech_logos/css.png" },
+        { name: "HTML5", src: "/images/tech_logos/html.png" },
+        { name: "Docker", src: "/images/tech_logos/docker.png" },
+        { name: "Docker Compose", src: "/images/tech_logos/docker_compose.png" },
+        { name: "Git", src: "/images/tech_logos/git.png" },
+        { name: "Github", src: "/images/tech_logos/github.png" },
+        { name: "Gitlab", src: "/images/tech_logos/gitlab.png" },
+        { name: "MySQL", src: "/images/tech_logos/mysql.png" },
+        { name: "PostgreSQL", src: "/images/tech_logos/postgresql.png" },
+        { name: "Linux", src: "/images/tech_logos/linux.png" },
     ];
 
     return (
