@@ -67,7 +67,7 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a href="/CV_Alvaro_Pastor_Sellers.pdf" download>
+            <a href="CV_Alvaro_Pastor_Sellers.pdf" download>
               <RetroButton text="RESUME" />
             </a>
           </li>
