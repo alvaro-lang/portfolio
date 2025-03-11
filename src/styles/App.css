@@ -2,8 +2,11 @@
   margin: 0% 15%;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 500px) {
   #app .sections{
     margin: 0 5%;
+  }
+  #header{
+    padding: 7% 5% !important;
   }
 }

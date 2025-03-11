@@ -6,6 +6,7 @@ import ContactBar from './components/ContactBar';
 import Presentation from './sections/Presentation';
 import About from './sections/About';
 import Experience from './sections/Experience';
+import Education from './sections/Education';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Presentation/>
           <About/>
           <Experience/>
+          <Education/>
         </div>
     </div>
   );
