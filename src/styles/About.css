@@ -18,8 +18,8 @@
 #about .container-text-images .tech-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     gap: 20px;
-    width: 300px;
 }
 #about .container-text-images .tech-grid .tech-logo img {
     width: 50px;
@@ -56,4 +56,16 @@
 
 #about .container-text-images .tech-grid .tech-logo:hover .tooltip {
     opacity: 1;
+}
+
+@media screen and (max-width: 930px) {
+    #about .container-text-images{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #about .container-text-images .tech-grid{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

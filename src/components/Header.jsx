@@ -29,7 +29,7 @@ export default function Header() {
     const handleScroll = () => {
       const header = document.getElementById("header");
 
-      if (window.scrollY > 0) {
+      if (window.scrollY > 10) {
         header.classList.add("scrolled");
       } else {
         header.classList.remove("scrolled");
@@ -51,28 +51,26 @@ export default function Header() {
 
       <nav className="links">
         <ul>
-          <li className="page">
+          <li className="section">
             <a href="#about" className={`retro-color ${activeSection === "about" ? "active" : ""}`}>
                 ABOUT
             </a>
           </li>
-          <li className="page">
+          <li className="section">
             <a href="#experience" className={`retro-color ${activeSection === "experience" ? "active" : ""}`}>
               EXPERIENCE
             </a>
           </li>
-          <li className="page">
+          <li className="section">
             <a href="#courses" className={`retro-color ${activeSection === "courses" ? "active" : ""}`}>
               EDUCATION
             </a>
           </li>
-          <li>
-            <a href="CV_Alvaro_Pastor_Sellers.pdf" download>
-              <RetroButton text="RESUME" />
-            </a>
-          </li>
         </ul>
       </nav>
+      <a href="CV_Alvaro_Pastor_Sellers.pdf" download>
+        <RetroButton text="RESUME" />
+      </a>
     </header>
   );
 }

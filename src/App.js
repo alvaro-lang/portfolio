@@ -18,7 +18,6 @@ function App() {
           <Presentation/>
           <About/>
           <Experience/>
-          <Education/>
         </div>
     </div>
   );

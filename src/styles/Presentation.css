@@ -8,19 +8,38 @@
 #presentation .text-container{
     display: flex;
     flex-direction: column;
-    width: 90%;
 }
 
 #presentation .title{
-    font-size: 4rem;
+    font-size: clamp(2rem, 8vw, 4rem);
 }
 
 #presentation .subtitle{
-    font-size: 4rem;
+    font-size: clamp(2rem, 8vw, 4rem);
     margin: 0 0 30px 30px
 }
 
 #presentation .presentation-text{
     text-align: justify;
-    width: 80%;
+    max-width: 700px;
+}
+
+@media screen and (max-width: 900px) {
+    #presentation #contact-bar{
+        display: inherit;
+        position: inherit;
+        flex-direction: row-reverse;
+        justify-content: left;
+        margin-top: 30px;
+    }
+    #presentation #contact-bar .email-icon{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1020px) {
+    #presentation {
+        justify-content: center;
+    }
 }

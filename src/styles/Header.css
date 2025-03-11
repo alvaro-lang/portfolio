@@ -2,12 +2,13 @@
     position: fixed;
     z-index: 1000;
     top: 0;
-    padding: 2% 4%;
+    padding: 40px;
     width: 100%;
     box-sizing: border-box;
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     transition: 0.3s ease;
 }
@@ -36,16 +37,16 @@
     align-items: center;
 }
 
-#header .links ul .page{
+#header .links ul .section{
     margin-right: 60px;
 }
 
-#header .links ul .page a {    
+#header .links ul .section a {    
     font-size: 0.8rem;
     opacity: 0.5;
     
 }
-#header .links ul .page a:hover:not(.active) {
+#header .links ul .section a:hover:not(.active) {
     animation: blinkText 1s steps(2, start) infinite;
 }
 
@@ -55,7 +56,7 @@
     100% { opacity: 0.5; }
 }
 
-#header .links ul .page .active{
+#header .links ul .section .active{
     animation: pulseActive 1.5s infinite alternate ease-in-out;
     opacity: 1;
 }
@@ -71,8 +72,14 @@
 
 #header.scrolled {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-    padding: 1% 4%;
+    padding: 15px 40px;
     backdrop-filter: blur(10px);
     background-color: rgb(15, 23, 42, 0.5);
     -webkit-backdrop-filter: blur(10px); /* For Safari */
-  }
+}
+
+@media screen and (max-width: 900px) {
+    #header .links{
+        display: none;
+    }
+}

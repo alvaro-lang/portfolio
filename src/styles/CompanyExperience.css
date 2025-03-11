@@ -6,18 +6,13 @@
     padding: 30px;
 
     display: flex;
-    justify-content: space-between;
-
+    gap: 50px;
     transition: 0.3s;
 }
 #company-experience .date{
     white-space: nowrap;
 }
 
-#company-experience .container-text{
-    margin-left: 50px;
-
-}
 #company-experience .container-text .job-title{
     font-weight: 700;
     font-size: 1.2rem;
@@ -43,4 +38,11 @@
 
 #company-experience:hover {
     transform: scale(1.03);
+}
+
+@media screen and (max-width: 1020px) {
+    #company-experience{
+        flex-direction: column;
+        gap: 10px
+    }
 }

@@ -38,7 +38,7 @@ export default function About() {
                 <div className='text description-text'>
                     <p className='first-paragraph'>I am a <span className='retro-color'>Full-Stack Software Engineer</span> with experience in building web applications, specializing in <span className='retro-color'>Python (Django)</span> and <span className='retro-color'>JavaScript (Vue.js/React.js)</span>.</p>
                     <p>Throughout my career, I have worked in agile environments (Scrum/Kanban), led client meetings, mentored junior developers, and developed high-performance REST APIs using <span className='retro-color'>Django Rest Framework</span>. I also have experience deploying applications in the cloud with Docker and DigitalOcean, managing databases like PostgreSQL and MySQL, and using tools such as Git, Jira, and Asana.</p>
-                    <p>I am always looking for new challenges to enhance my skills and learn more technologies</p>
+                    <p>My experience has primarily been in Spain, but I am now based in Dublin, where I continue to expand my knowledge and pursue new opportunities. I am always looking for new challenges to enhance my skills and learn more technologies.</p>
                 </div>
             </div>
            
