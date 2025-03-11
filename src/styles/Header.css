@@ -83,3 +83,12 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #header{
+        padding: 30px 5% !important;
+    }
+    #header.scrolled {
+        padding: 15px 5% !important;
+    }
+  }
