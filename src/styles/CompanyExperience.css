@@ -1,6 +1,4 @@
 #company-experience{
-    background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 10px rgba(184, 250, 145, 0.6);
 
     border-radius: 10px;
     padding: 30px;
@@ -35,9 +33,11 @@
 
 #company-experience:hover {
     transform: scale(1.03);
+    box-shadow: 0px 0px 10px rgba(184, 250, 145, 0.6);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1200px) {
     #company-experience{
         flex-direction: column;
         gap: 10px

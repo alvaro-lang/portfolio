@@ -62,7 +62,7 @@ export default function Header() {
             </a>
           </li>
           <li className="section">
-            <a href="#courses" className={`retro-color ${activeSection === "courses" ? "active" : ""}`}>
+            <a href="#education" className={`retro-color ${activeSection === "education" ? "active" : ""}`}>
               EDUCATION
             </a>
           </li>
