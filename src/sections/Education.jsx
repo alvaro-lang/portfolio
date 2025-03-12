@@ -2,7 +2,6 @@ import React from 'react'
 import '../styles/Education.css'
 import SectionTitle from '../components/SectionTitle'
 import CompanyExperience from '../components/CompanyExperience'
-import LogoRotate from '../components/LogoRotate'
 
 export default function Education() {
 
