@@ -1,12 +1,20 @@
 import React from 'react'
 import '../styles/CompanyExperience.css'
+import LogoRotate from './LogoRotate'
 
-export default function CompanyExperience({job_title, date, company, text_info, technologies}) {
+export default function CompanyExperience({job_title, date, company, text_info, technologies, image={src: '', name: ''}}) {
   return (
     <div id='company-experience'>
-        <div className='date'>
-            {date}
+
+        <div className='container-date-logo'>
+            <div className='date'>
+                {date}
+            </div>
+            <div className='logo'>
+                <LogoRotate image={image}/>
+            </div>
         </div>
+
         <div className='container-text'>
             <div className='job-title white-font'>
                 {job_title}
@@ -24,9 +32,10 @@ export default function CompanyExperience({job_title, date, company, text_info, 
                     </div>
                 ))}
             </div>
-            
         </div>
-        
+        <div className='small-logo'>
+            <LogoRotate image={image}/>
+        </div>
     </div>
   )
 }

@@ -1,3 +1,7 @@
-#courses{
+#education{
     min-height: 100vh;
+}
+
+#education .margin-box{
+    margin-top: 50px;
 }

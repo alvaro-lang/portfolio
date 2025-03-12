@@ -61,6 +61,11 @@ export default function Header() {
               EXPERIENCE
             </a>
           </li>
+          <li className="section">
+            <a href="#education" className={`retro-color ${activeSection === "education" ? "active" : ""}`}>
+              EDUCATION
+            </a>
+          </li>
         </ul>
       </nav>
       <a href="CV_Alvaro_Pastor_Sellers.pdf" download>
