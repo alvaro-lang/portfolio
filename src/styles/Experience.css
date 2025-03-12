@@ -5,3 +5,7 @@
 #experience .container-margin{
     margin-top: 50px;
 }
+
+#experience #information-box .container-text .job-title{
+    margin: 0;
+}
