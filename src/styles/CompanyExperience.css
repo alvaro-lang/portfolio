@@ -1,4 +1,5 @@
 #company-experience{
+    position: relative;
 
     border-radius: 10px;
     padding: 30px;
@@ -7,13 +8,33 @@
     gap: 50px;
     transition: 0.3s;
 }
-#company-experience .date{
+
+#company-experience .container-date-logo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#company-experience .container-date-logo .date{
+    width: 100%;
     white-space: nowrap;
+    text-align: left;
+}
+
+#company-experience .container-date-logo .logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#company-experience .container-date-logo .logo #logo-rotate img{
+    width: 100px;
 }
 
 #company-experience .container-text .job-title{
     font-weight: 700;
     font-size: 1.2rem;
+    margin-right: 80px;
 }
 
 #company-experience .container-text .container-grid{
@@ -37,9 +58,26 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+#company-experience .small-logo{
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 60px;
+}
+
+#company-experience .small-logo #logo-rotate img{
+    width: 50px;
+}
+
 @media screen and (max-width: 1200px) {
     #company-experience{
         flex-direction: column;
         gap: 10px
+    }
+    #company-experience .container-date-logo .logo{
+        display: none;
+    }
+    #company-experience .small-logo{
+        display: inherit;
     }
 }

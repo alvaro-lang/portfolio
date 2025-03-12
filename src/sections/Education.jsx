@@ -18,19 +18,16 @@ export default function Education() {
     <section id="education">
       <SectionTitle text={'EDUCATION'}/>
       
-      <div className='box'>
-        <LogoRotate image={university_alicante_logo} />
-        <CompanyExperience job_title="Bachelor's degree in Computer Engineering (Software Engineering Specialization)" date='2018 - 2023' company='University of Alicante' text_info={university_text} technologies={[]}/>
+      <div>
+        <CompanyExperience job_title="Bachelor's degree in Computer Engineering (Software Engineering Specialization)" date='2018 - 2023' company='University of Alicante' text_info={university_text} technologies={[]} image={university_alicante_logo}/>
       </div>
       
-      <div className='box'>
-        <CompanyExperience job_title='Course: Django and Django rest framework from basic to professional' date='Jan 2023' company='Udemy' text_info={udemy_text} technologies={[]}/>
-        <LogoRotate image={udemy_logo} />
+      <div className='margin-box'>
+        <CompanyExperience job_title='Course: Django and Django rest framework from basic to professional' date='Jan 2023' company='Udemy' text_info={udemy_text} technologies={[]} image={udemy_logo}/>
       </div>
 
-      <div className='box'>
-        <LogoRotate image={coursera_logo} />
-        <CompanyExperience job_title='Course: Django for Everybody (University of Michigan)' date='Jul 2024' company='Coursera' text_info={coursera_text} technologies={[]}/>
+      <div className='margin-box'>
+        <CompanyExperience job_title='Course: Django for Everybody (University of Michigan)' date='Jul 2024' company='Coursera' text_info={coursera_text} technologies={[]} image={coursera_logo}/>
       </div>
     </section>
   )
