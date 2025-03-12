@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/CompanyExperience.css'
+import '../styles/InformationBox.css'
 import LogoRotate from './LogoRotate'
 
-export default function CompanyExperience({job_title, date, company, text_info, technologies, image={src: '', name: ''}}) {
+export default function InformationBox({job_title, date, company, text_info, technologies, image={src: '', name: ''}}) {
   return (
-    <div id='company-experience'>
+    <div id='information-box'>
 
         <div className='container-date-logo'>
             <div className='date'>

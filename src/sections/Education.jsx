@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Education.css'
 import SectionTitle from '../components/SectionTitle'
-import CompanyExperience from '../components/CompanyExperience'
+import InformationBox from '../components/InformationBox'
 
 export default function Education() {
 
@@ -18,15 +18,15 @@ export default function Education() {
       <SectionTitle text={'EDUCATION'}/>
       
       <div>
-        <CompanyExperience job_title="Bachelor's degree in Computer Engineering (Software Engineering Specialization)" date='2018 - 2023' company='University of Alicante' text_info={university_text} technologies={[]} image={university_alicante_logo}/>
+        <InformationBox job_title="Bachelor's degree in Computer Engineering (Software Engineering Specialization)" date='2018 - 2023' company='University of Alicante' text_info={university_text} technologies={[]} image={university_alicante_logo}/>
       </div>
       
       <div className='margin-box'>
-        <CompanyExperience job_title='Course: Django and Django rest framework from basic to professional' date='Jan 2023' company='Udemy' text_info={udemy_text} technologies={[]} image={udemy_logo}/>
+        <InformationBox job_title='Course: Django and Django rest framework from basic to professional' date='Jan 2023' company='Udemy' text_info={udemy_text} technologies={[]} image={udemy_logo}/>
       </div>
 
       <div className='margin-box'>
-        <CompanyExperience job_title='Course: Django for Everybody (University of Michigan)' date='Jul 2024' company='Coursera' text_info={coursera_text} technologies={[]} image={coursera_logo}/>
+        <InformationBox job_title='Course: Django for Everybody (University of Michigan)' date='Jul 2024' company='Coursera' text_info={coursera_text} technologies={[]} image={coursera_logo}/>
       </div>
     </section>
   )

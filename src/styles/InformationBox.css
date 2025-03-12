@@ -1,0 +1,92 @@
+#information-box{
+    position: relative;
+
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+    gap: 40px;
+    transition: 0.3s;
+}
+
+#information-box .container-date-logo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#information-box .container-date-logo .date{
+    width: 100%;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#information-box .container-date-logo .logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#information-box .container-date-logo .logo #logo-rotate img{
+    width: 100px;
+}
+
+#information-box .container-text .job-title{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-right: 80px;
+}
+
+#information-box .container-text .container-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+#information-box .container-text .container-grid .tags{
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+#information-box .small-logo{
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+}
+
+#information-box .small-logo #logo-rotate img{
+    width: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    #information-box{
+        flex-direction: column;
+        gap: 10px
+    }
+    #information-box .container-date-logo .logo{
+        display: none;
+    }
+    #information-box .small-logo{
+        display: inherit;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #information-box {
+        box-shadow: 0px 0px 10px rgba(184, 250, 145, 0.6);
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+} 
+
+@media screen and (min-width: 500px) {
+    #information-box:hover {
+        transform: scale(1.03);
+        box-shadow: 0px 0px 10px rgba(184, 250, 145, 0.6);
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}

@@ -9,7 +9,7 @@ export default function FallingPixels() {
         canvas.height = window.innerHeight;
 
         const pixels = [];
-        const numPixels = 30;
+        const numPixels = 15;
 
         for (let i = 0; i < numPixels; i++) {
             pixels.push({
