@@ -5,9 +5,9 @@ import CompanyExperience from '../components/CompanyExperience'
 
 export default function Education() {
 
-  const university_alicante_logo={src: "/images/logos/university_alicante.png", name: 'University Alicante'}
-  const udemy_logo={src: "/images/logos/udemy.png", name: 'Udemy'}
-  const coursera_logo={src: "/images/logos/coursera.png", name: 'Coursera'}
+  const university_alicante_logo={src: "images/logos/university_alicante.png", name: 'University Alicante'}
+  const udemy_logo={src: "images/logos/udemy.png", name: 'Udemy'}
+  const coursera_logo={src: "images/logos/coursera.png", name: 'Coursera'}
 
   const university_text="Provides a comprehensive training in software development, including programming, database design, and system architecture. I gained experience in creating database diagrams and managing databases, as well as using agile methodologies like Scrum, DevOps tools, and software testing practices. Additionally, I developed knowledge in cybersecurity and networking, and honed my project management and teamwork skills through hands-on projects."
   const udemy_text="Covers the complete development of web applications using Django and Django REST Framework. It includes database modeling with Django ORM, creating dynamic views and templates, implementing authentication and authorization, and building RESTful APIs. Additionally, it explores best practices for developing scalable and secure applications, as well as deploying projects to production."

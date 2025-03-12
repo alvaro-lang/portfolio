@@ -1,3 +1,7 @@
+#logo-rotate{
+    perspective: 1000px; /* for safari */
+}
+
 #logo-rotate img{
     animation: rotateY 5s linear infinite;
 }
