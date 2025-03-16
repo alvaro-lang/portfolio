@@ -11,11 +11,12 @@
 }
 
 #presentation .title{
+    display: flex;
+    flex-direction: column;
     font-size: clamp(2rem, 8vw, 4rem);
 }
 
-#presentation .subtitle{
-    font-size: clamp(2rem, 8vw, 4rem);
+#presentation .title .container-margin{
     margin: 0 0 30px 30px
 }
 
