@@ -5,10 +5,10 @@ import InformationBox from '../components/InformationBox'
 
 export default function Experience() {
 
-  const jakincode_text_info = "I developed web applications using technologies such as Django (backend) and Vue.js and React.js (frontend). One of the projects I developed is a GRC application used for the implementation of ISO 27001 and ENS. Additionally, I led meetings with clients for the maintenance of their applications or the implementation of new functionalities. I also mentored junior developers, guiding them in coding best practices."
+  const jakincode_text_info = "Web applications have been developed using Django (backend) and Vue.js/React.js (frontend). One of the projects developed is a GRC application used for the implementation of ISO 27001 and ENS. Additionally, I led meetings with clients for the maintenance of their applications or the implementation of new functionalities. Also, I mentored junior developers, guiding them in coding best practices."
   const jakincode_technologies=['Python', 'Django', 'Django Rest Framework', 'JavaScript', 'Vue.js', 'React.js', 'Celery', 'Redis', 'Docker']
   
-  const revoluz_text_info="I developed web applications using Django (backend) and Vue.js and React.js (frontend). One of the projects I developed is an automatic electric bill comparison application, and I also created interactive maps using Leaflet.js. Additionally, I configured some VPS to deploy the projects in Digital Ocean."
+  const revoluz_text_info="Web applications have been developed using Django (backend) and Vue.js/React.js (frontend). The projects developed include an automatic electric bill comparison application and the creation of interactive maps with Leaflet.js. VPS have also been configured for project deployment on Digital Ocean."
   const revoluz_technologies=['Python', 'Django', 'Django Rest Framework', 'JavaScript', 'Vue.js', 'React.js', 'Leaflet.js', 'Docker']
 
   return (
