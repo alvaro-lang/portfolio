@@ -9,3 +9,7 @@
 #experience #information-box .container-text .job-title{
     margin: 0;
 }
+
+#experience #information-box{
+    display: block;
+}

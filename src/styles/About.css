@@ -19,7 +19,8 @@
     gap: 20px;
 }
 #about .container-text-images .tech-grid .tech-logo img {
-    width: 50px;
+    width: 60px;
+    height: 50px;
     object-fit: contain;
 }
 #about .container-text-images .tech-grid .tech-logo {

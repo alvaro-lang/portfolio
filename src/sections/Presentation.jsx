@@ -8,13 +8,11 @@ export default function Presentation() {
         <section id='presentation'>
             <div className='text-container'>
                 <div className='title retro-font'>
-                    Software
-                </div>
-                <div className='subtitle retro-font white-font'>
-                    Developer
+                    <span>Software</span>
+                    <span className='container-margin white-font'>Developer</span>
                 </div>
                 <div className="presentation-text description-text">
-                    Hi! I'm <span className='retro-color'>Alvaro</span>. A Software Engineer with 2+ years of experience in <span className='retro-color'>Full-Stack</span> web application development with Python (Django) and JavaScript (Vue.js, React.js).
+                    Hi! I'm <span className='retro-color'>Alvaro</span>. A <span className='retro-color'>Full-Stack Software Developer</span> with 2+ years of experience in web application development with Python (<span className='retro-color'>Django</span>) and JavaScript (<span className='retro-color'>Vue.js, React.js</span>).
                 </div>
                 <ContactBar/>
             </div>
