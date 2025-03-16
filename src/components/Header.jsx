@@ -46,7 +46,7 @@ export default function Header() {
   return (
     <header id="header" className="retro-font">
       <a href="#presentation">
-        <img className="logo-page" src="images/page_logo.png" alt="Logo page" />
+        <img className="page-logo" src="images/page_logo.png" alt="Logo page" />
       </a>
 
       <nav className="links">
