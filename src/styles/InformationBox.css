@@ -9,15 +9,26 @@
     transition: 0.3s;
 }
 
-#information-box .logo {
+#information-box .logo-big-screen {
     margin: 0 30px 0 10px;
 }
 
-#information-box .logo #logo-rotate img{
+#information-box .logo-big-screen #logo-rotate img{
     width: 100px;
 }
 
-#information-box .container-text .date{
+#information-box .container-text .container-first-text-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#information-box .container-text .container-first-text-logo .logo-small-screen #logo-rotate img{
+    width: 50px;
+}
+
+#information-box .container-text .container-first-text-logo .container-first-text .date{
     width: 100%;
     white-space: nowrap;
     text-align: left;
@@ -25,7 +36,7 @@
     margin-bottom: 10px;
 }
 
-#information-box .container-text .job-title{
+#information-box .container-text .container-first-text-logo .container-first-text .job-title{
     font-weight: 700;
     font-size: 1.2rem;
 }
@@ -46,22 +57,21 @@
 }
 
 @media screen and (max-width: 1200px) {
-    #information-box{
+    #information-box .logo-small-screen{
         display: block;
     }
-    #information-box .logo{
-        position: absolute;
-        right: 30px;
-        top: 40px;
-        margin: 0;
+    #information-box .logo-big-screen{
+        display: none;
     }
-    #information-box .logo #logo-rotate img{
-        width: 50px;
-    }
-    #information-box .container-text .job-title{
-        margin-right: 80px;
-    }
+}
 
+@media screen and (min-width: 1200px) {
+    #information-box .logo-big-screen{
+        display: block;
+    }
+    #information-box .logo-small-screen{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 500px) {

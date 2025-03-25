@@ -5,20 +5,28 @@ import LogoRotate from './LogoRotate'
 export default function InformationBox({job_title, date, company, text_info, technologies, image={src: '', name: ''}}) {
   return (
     <div id='information-box'>
-        <div className='logo'>
+        <div className='logo-big-screen'>
             <LogoRotate image={image}/>
         </div>
 
         <div className='container-text'>
-            <div className='date'>
-                {date}
+            <div className='container-first-text-logo'>
+                <div className='container-first-text'>
+                    <div className='date'>
+                        {date}
+                    </div>
+                    <div className='job-title white-font'>
+                        {job_title}
+                    </div>
+                    <div className='company'>
+                        {company}
+                    </div>
+                </div>
+                <div className='logo-small-screen'>
+                    <LogoRotate image={image}/>
+                </div>
             </div>
-            <div className='job-title white-font'>
-                {job_title}
-            </div>
-            <div className='company'>
-                {company}
-            </div>
+            
             <div className='text-info'>
                 <p dangerouslySetInnerHTML={{ __html: text_info }}></p>
             </div>
