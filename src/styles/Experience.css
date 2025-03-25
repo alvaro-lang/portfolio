@@ -6,10 +6,10 @@
     margin-top: 50px;
 }
 
-#experience #information-box .container-text .job-title{
-    margin: 0;
+#experience #information-box .logo-big-screen{
+    display: none;
 }
 
-#experience #information-box{
-    display: block;
+#experience #information-box .logo-small-screen{
+    display: none;
 }
