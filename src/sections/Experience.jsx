@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/Experience.css'
 import SectionTitle from '../components/SectionTitle'
 import InformationBox from '../components/InformationBox'
+import Timeline from '../components/Timeline'
 
 export default function Experience() {
 
@@ -15,13 +16,10 @@ export default function Experience() {
     <section id="experience">
       <SectionTitle text={'EXPERIENCE'}/>
       
-      <div>
+      <Timeline>
         <InformationBox job_title='Full-Stack Software Engineer' date='Dec 2023 - Oct 2024' company='JakinCode' text_info={jakincode_text_info} technologies={jakincode_technologies}/>
-      </div>
-      
-      <div className='container-margin'>
         <InformationBox job_title='Full-Stack Software Engineer' date='Feb 2022 - Jun 2023' company='Revoluz Energy Consulting' text_info={revoluz_text_info} technologies={revoluz_technologies}/>
-      </div>
+      </Timeline>
       
     </section>
   )

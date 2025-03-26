@@ -3,7 +3,7 @@ html{
   font-size: 16px;
   scroll-behavior: smooth;
 
-  color: rgb(158, 168, 193, 0.9);
+  color: rgb(174, 182, 203);
 }
 body {
   margin: 0 0 100px 0;
@@ -20,7 +20,7 @@ body {
   color: rgb(184, 250, 145);
 }
 .white-font{
-  color: rgb(240, 240, 240, 0.9);
+  color: rgb(240, 240, 240);
 }
 .description-text{
   line-height: 1.5;
