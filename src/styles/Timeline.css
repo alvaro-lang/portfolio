@@ -1,0 +1,37 @@
+#timeline {
+    position: relative;
+}
+
+#timeline .item-margin{
+    margin-bottom: 60px
+}
+
+#timeline::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    bottom: 0;
+    left: 6px;
+    width: 2px;
+    background-color: rgb(55, 65, 81);
+}
+
+#timeline .timeline-item {
+    position: relative;
+    padding-left: 30px;
+}
+
+#timeline .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(184, 250, 145);
+    border-radius: 50%;
+}
+
+#timeline #information-box{
+    padding: 0 20px;
+}
