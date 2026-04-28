@@ -1,10 +1,12 @@
-import React from 'react'
 import '../styles/Experience.css'
 import SectionTitle from '../components/SectionTitle'
 import InformationBox from '../components/InformationBox'
 import Timeline from '../components/Timeline'
 
 export default function Experience() {
+
+  const healthbeacon_text_info = "Developed and architected scalable backend systems with Python and Django, implemented API testing with Postman, managed deployments across environments, optimized performance using Redis and Celery, documented processes in Confluence, and handled task tracking and version control with Jira and Bitbucket."
+  const healthbeacon_technologies=['Python', 'Django', 'Django Rest Framework', 'Celery', 'Redis', 'Postman']
 
   const jakincode_text_info = "Web applications have been developed using Django (backend) and Vue.js/React.js (frontend). One of the projects developed is a GRC application used for the implementation of ISO 27001 and ENS. Additionally, I led meetings with clients for the maintenance of their applications or the implementation of new functionalities. Also, I mentored junior developers, guiding them in coding best practices."
   const jakincode_technologies=['Python', 'Django', 'Django Rest Framework', 'JavaScript', 'Vue.js', 'React.js', 'Celery', 'Redis', 'Docker']
@@ -17,6 +19,7 @@ export default function Experience() {
       <SectionTitle text={'EXPERIENCE'}/>
       
       <Timeline>
+        <InformationBox job_title='Backend Software Engineer' date='May 2025 - Present' company='HealthBeacon' text_info={healthbeacon_text_info} technologies={healthbeacon_technologies}/>
         <InformationBox job_title='Full-Stack Software Engineer' date='Dec 2023 - Oct 2024' company='JakinCode' text_info={jakincode_text_info} technologies={jakincode_technologies}/>
         <InformationBox job_title='Full-Stack Software Engineer' date='Feb 2022 - Jun 2023' company='Revoluz Energy Consulting' text_info={revoluz_text_info} technologies={revoluz_technologies}/>
       </Timeline>
